@@ -38,12 +38,12 @@ public static void Main()
     Console.WriteLine("Введите координаты z2=");
     Double z2= Double.Parse(Console.ReadLine());
         
-    // Double x1 = 2; // можно хардкодом объявить переменную
-    // Double y1 = -5;
-    // Double z1 = 7;
-    // Double x2 = 3;
-    // Double y2 = 4;
-    // Double z2 = 5;
+    // Double x1 = 34; // можно хардкодом объявить переменную
+    // Double y1 = 21;
+    // Double z1 = 5;
+    // Double x2 = -3;
+    // Double y2 = -12;
+    // Double z2 = 7;
      
     
     distance(x1, y1, z1,  // передаем полученное значение переменных в метод 
