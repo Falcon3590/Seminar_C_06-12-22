@@ -1,1 +1,51 @@
 ﻿// Задача 3 Напишите программу, которая принимает на вход число (N) и помещает в массив таблицу кубов чисел от 1 до N. Полученный массив вывести на экран.
+// Указание: Вывод массива вынести в отдельную функцию.
+
+class Cube
+{
+ 
+    public static void Main(string[] args) // означает, что классу можно передать массив со строками,
+    {
+        Console.WriteLine("Введите число N");
+        int n = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= n; i++) 
+        Console.Write((Math.Pow(i, 3)) + ", ");
+        Console.ReadKey(true);
+        return;
+    }
+}
+
+
+// Понятия не имею как масив в данной ситуации вывести отдельной функцией на консоль
+
+
+// не доведенные до успеха мысли в слух о том как вывод массива вынести в отдельную функцию
+
+// Вопросы которые возникли: Как возвращать массив; как в переменную выгрузить данные операции Math.Pow(i, 3); как передавать переменные из функции в функцию; почему в методе не получается объявить нужные мне переменные и можно ли это делать...
+
+// class Program
+// {
+ 
+//     public static void Main(string[] args)
+//     {
+//         Console.WriteLine("Введите число N");
+//         int n = int.Parse(Console.ReadLine());
+//         for (int i = 1; i <= n; i++)
+//         Console.WriteLine(Math.Pow(i, 3));
+//         ArrCube("d");
+//         Console.ReadKey(true);
+//         return;
+        
+
+//     }
+
+//     public static void ArrCube(string str)
+//     {
+//         Console.WriteLine (str);
+//     }
+
+        
+// }
+
+
+
