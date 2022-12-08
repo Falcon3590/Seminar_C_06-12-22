@@ -47,5 +47,18 @@ class Cube
         
 // }
 
+// void PrintArray(int[] array)
+// {
+// int count = array.Length;
+
+// for (int i = 0; i < count; i++)
+//     {
+//     System.Console.Write($"{array[i]} ");
+//     }
+//     Console.WriteLine();
+// }
+
+// PrintArray(arr);
+
 
 
