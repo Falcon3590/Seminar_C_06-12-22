@@ -11,14 +11,13 @@ int [] array = new int[size];
 
 Console.Write("[");
 
-for (int i = 1; i <= n;)
+for (int i = 0; i <= n; i++)
 
     {
        
        array[i] = Convert.ToInt32(Math.Pow(i, 3));  
        Console.Write($"{array[i] }, ");
-       i++;
-              
+                           
     }
 
 Console.WriteLine("]");
