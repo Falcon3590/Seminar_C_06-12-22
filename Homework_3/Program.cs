@@ -9,15 +9,15 @@ int size = n + 1;
 
 int [] array = new int[size];
 
-
 Console.Write("[");
 
-for (int i = 1; i <= n; i++)
+for (int i = 1; i <= n;)
 
     {
        
        array[i] = Convert.ToInt32(Math.Pow(i, 3));  
        Console.Write($"{array[i] }, ");
+       i++;
               
     }
 
