@@ -1,20 +1,32 @@
 ﻿// Задача 3 Напишите программу, которая принимает на вход число (N) и помещает в массив таблицу кубов чисел от 1 до N. Полученный массив вывести на экран.
 // Указание: Вывод массива вынести в отдельную функцию.
 
-class Cube
-{
- 
-    public static void Main(string[] args) // означает, что классу можно передать массив со строками,
-    {
-        Console.WriteLine("Введите число N");
-        int n = int.Parse(Console.ReadLine());
-        for (int i = 1; i <= n; i++) 
-        Console.Write((Math.Pow(i, 3)) + ", ");
-        Console.ReadKey(true);
-        return;
-    }
-}
+Console.WriteLine("Введите число N");
 
+int n = int.Parse(Console.ReadLine());
+
+int size = n + 1;
+
+int [] array = new int[size];
+
+
+Console.Write("[");
+
+for (int i = 1; i <= n; i++)
+
+    {
+       
+       array[i] = Convert.ToInt32(Math.Pow(i, 3));  
+       Console.Write($"{array[i] }, ");
+              
+    }
+
+Console.WriteLine("]");
+
+
+//int count = Convert.ToInt32(Math.Pow(i, 3));
+
+// for (int i = 1; i <= n; i++) 
 
 // Понятия не имею как масив в данной ситуации вывести отдельной функцией на консоль
 
@@ -26,7 +38,7 @@ class Cube
 // class Program
 // {
  
-//     public static void Main(string[] args)
+//      void Main(string[] args)
 //     {
 //         Console.WriteLine("Введите число N");
 //         int n = int.Parse(Console.ReadLine());
@@ -62,3 +74,20 @@ class Cube
 
 
 
+    //     void Main(string[] args)
+    // {
+        
+    //     Console.WriteLine("Введите число N");
+    //     int n = int.Parse(Console.ReadLine());
+    //     string[] array = new string[n]; 
+
+    //     Console.WriteLine("[");
+
+    //     for (int i = 1; i <= n; i++)
+    //     {
+    //         int result = Convert.ToInt32(Math.Pow(i, 3));  
+    //         Console.Write();
+    //     }
+
+    //     Console.WriteLine("]");
+    //  }
