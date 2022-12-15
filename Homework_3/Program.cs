@@ -5,17 +5,15 @@ Console.WriteLine("Введите число N");
 
 int n = int.Parse(Console.ReadLine());
 
-int size = n + 1;
-
-int [] array = new int[size];
+int [] array = new int[n];
 
 Console.Write("[");
 
-for (int i = 1; i <= n; i++)
+for (int i = 0; i < n; i++)
 
     {
        
-       array[i] = Convert.ToInt32(Math.Pow(i, 3));  
+       array[i] = Convert.ToInt32(Math.Pow(i + 1, 3));  
        Console.Write($"{array[i] }, ");
                            
     }
